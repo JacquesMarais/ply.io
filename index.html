@@ -34,8 +34,10 @@
       }).addTo(mymap);
        
        mymap.on('click', function(e) {
-        //  
+        var url = "https://api.mapbox.com/geocoding/v5/mapbox.places/hotel.json?bbox=" + map.getBounds().toBBoxString() + "&access_token=pk.eyJ1IjoiamFjcXVlc20iLCJhIjoiY2s3dmxlamE0MDQwbTNtcXl6OHI4enU4MyJ9.8bjyz1lCg8DNUZvcOTG9NA"
        });
+       
+       //https://jsfiddle.net/yz41k980/
        
      </script>
   </body>
